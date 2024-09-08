@@ -14,7 +14,7 @@ function Profile() {
         const fetchTrips = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get('http://localhost:8080/trip');
+                const response = await axios.get('https://tripgenerator.onrender.com/trip');
                 setTrips(response.data);
             } catch (error) {
                 console.error('Error fetching trips:', error);

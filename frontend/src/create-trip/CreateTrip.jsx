@@ -72,7 +72,7 @@ function CreateTrip() {
                 hotelOptions: JSON.parse(responseText).hotelOptions
             };
 
-            const saveResponse = await axios.post('http://localhost:8080/trip/save', tripData);
+            const saveResponse = await axios.post('https://tripgenerator.onrender.com/trip/save', tripData);
             console.log('Backend response:', saveResponse.data);
 
             const id = saveResponse.data._id;

@@ -30,7 +30,7 @@ const Login = ({ onAuthSuccess }) => {
         }
         setLoading(true);
         try {
-            const url = 'http://localhost:8080/trip/login'
+            const url = 'https://tripgenerator.onrender.com/trip/login'
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
